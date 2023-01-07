@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="firms">
+        <item>Samsung</item>
+        <item>Philips</item>
+        <item>Bosch</item>
+    </string-array>
+</resources>

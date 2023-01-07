@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab_2</string>
+    <string name="ok">Ok</string>
+    <string name="android_name">Development-for-Android\nLab2</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="product">Product</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firm_description">Select firm</string>
+    <string name="type_description">Select type</string>
+</resources>

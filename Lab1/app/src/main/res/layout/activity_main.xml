@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/android_name"
+        android:textColor="@color/brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="140dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_selected"
+        app:layout_constraintStart_toStartOf="@+id/text_selected"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.465">
+
+        <RadioButton
+            android:id="@+id/samsung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/samsung" />
+
+        <RadioButton
+            android:id="@+id/philips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/philips" />
+
+        <RadioButton
+            android:id="@+id/bosch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bosch" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_selected"
+        app:layout_constraintEnd_toEndOf="@+id/text_selected"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.468">
+
+        <RadioButton
+            android:id="@+id/refrigerator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refrigerator" />
+
+        <RadioButton
+            android:id="@+id/washing_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/washing_machine" />
+
+        <RadioButton
+            android:id="@+id/laptop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/laptop" />
+
+        <RadioButton
+            android:id="@+id/microwave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/microwave" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:onClick="productSelection"
+        app:layout_constraintBottom_toTopOf="@+id/text_selected"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup1"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:onClick="cancelChoice"
+        app:layout_constraintBottom_toTopOf="@+id/text_selected"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup1"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/text_selected"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="ok">Ok</string>
+    <string name="android_name">Development-for-Android\nLab1</string>
+    <string name="cancel">Cancel</string>
+    <string name="bosch">Bosch</string>
+    <string name="philips">Philips</string>
+    <string name="samsung">Samsung</string>
+    <string name="refrigerator">Холодильник</string>
+    <string name="washing_machine">Пральна машина</string>
+    <string name="laptop">Ноутбук</string>
+    <string name="microwave">Мікрохвильова піч</string>
+</resources>
